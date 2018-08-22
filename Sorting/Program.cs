@@ -28,18 +28,7 @@ namespace Sorting
             }
         //realizing the interface
         public class DataProcessor : IDataSortable
-        {
-
-            //ublic void Print(T[] printingArray)
-            //{
-            //    foreach (T value in printingArray)
-            //    {
-            //        Console.Write(" {0}", value);
-            //    }
-            //    Console.WriteLine("\n");
-            //}
-
-            //public abstract T[] Sort(T[] sortingArray);
+        {       
             public void Print(int[] arrayToPrint)
             {
                 foreach (int dataValue in arrayToPrint)
@@ -49,12 +38,10 @@ namespace Sorting
                 Console.WriteLine("\n");
                 //throw new NotImplementedException();
             }
-
             public void Read()
             {
                 throw new NotImplementedException();
             }
-
             public int[] Sort(int[] arrayToSort)
             {
                 throw new NotImplementedException();
