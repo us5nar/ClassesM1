@@ -14,7 +14,7 @@ namespace ConsoleApp1
             Person vasilij = new Person("Вася");
             Person james = new Person("James Bond", 33);
             Person adult = new Person("Big Guy", 39, "spy");
-            Person tom = new Person { name = "Tom", age = 31 };//init of an object
+            Person tom = new Person { name = "Tom", age = 31, position = "Chupacabra" };//init of an object - overridding all constructors
 
             joe.SayHello();
             vasilij.SayHello();
