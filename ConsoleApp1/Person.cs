@@ -14,9 +14,10 @@ namespace ConsoleApp1
         public string position;
         //Constructors with 3 owerloads
         public Person() : this("J.Doul") { }//{ name = "J.Doul"; age = 16; }
-        public Person(string presentName) : this(presentName,16,"FreeLanvcer") { }// { name = presentName; age = 16; position = "Freelancer"; }
-        public Person(string name, int age) { name = this.name;age = this.age; position = "Develkoper"; }
-        public Person(string presentName, int presentAge, string presentPosition) { name = presentName; age = presentAge; position = presentPosition; }
+        public Person(string name) : this(name,16,"FreeLanvcer") { }// { name = presentName; age = 16; position = "Freelancer"; }
+        public Person(string name, int age) { name = this.name;age = this.age; position = "Developer"; } //Why doesn't work? (for James)
+        //private (base) constructor - questions: factory and singltone
+        private Person(string name, int age, string position) { this.name = name; this.age = age; this.position = position; }
         //methods
         public void SayHello()
         {
