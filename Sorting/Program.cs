@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 
 namespace Sorting
 {
@@ -42,7 +42,6 @@ namespace Sorting
                 //next line
                 Console.WriteLine();
                 //Print a line using while
-                //var
                 int  counter = 0;
                 while (counter < arrayToPrint.Length*4)
                 {
@@ -51,7 +50,7 @@ namespace Sorting
                 }
                 //next line
                 Console.WriteLine();
-                ////print array using foreach
+                //print array using foreach
                 foreach (int dataValue in arrayToPrint)
                 {                
                     Console.Write("{0,4}", dataValue);
