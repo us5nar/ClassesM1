@@ -11,26 +11,16 @@ namespace Sorting
         static void Main(string[] args)
         {
             DataProcessor Data = new DataProcessor();
+            DefaultSorter SortArrayByDefault = new DefaultSorter();
             int[] arrayOfNumbers = { 10, 44, 1, 5, 8, 11, 0, 76 };
             Console.WriteLine("Array before sorting");
             Data.Print(arrayOfNumbers);
             Console.WriteLine("Sorted array");
-            Data.Print(Data.Sort(arrayOfNumbers));
+            Data.Print(SortArrayByDefault.Sort(arrayOfNumbers));
             Console.ReadLine();
         }
-        //interface definition
-        interface IDataSortable
-            {
-            // interface members
-            // Read data from console TBD
-            //void Read();
-            // Sort the data
-            int[] Sort(int[] arrayToSort);
-            // Print results to the console
-            void Print(int[] arrayToPrint);
-            }
-        //realizing the interface
-        public class DataProcessor : IDataSortable
+ 
+        public class DataProcessor /*: IDataSorter*/
         {       
             public void Print(int[] arrayToPrint)
             {
@@ -68,15 +58,7 @@ namespace Sorting
                 //next line
                 Console.WriteLine();
             }
-            //public void Read()
-            //{
-            //    throw new NotImplementedException();
-            //}
-            public int[] Sort(int[] arrayToSort)
-            {
-                Array.Sort(arrayToSort);
-                return arrayToSort;                
-            }
+ 
         }
     }      
 }
